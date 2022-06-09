@@ -8,6 +8,10 @@ docker build  -t="sabnzbd-py311" .
 
 (Note the dot at the end)
 
+Or brand new building (can take 5-10 minutes)
+
+docker build --no-cache -t="sabnzbd-py311" .
+
 # Run
 docker run -p 8080:8080 --name sabnzbd-py311 sabnzbd-py311
 
